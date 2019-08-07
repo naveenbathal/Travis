@@ -1,0 +1,27 @@
+{
+  "author": "Maciej Małecki <maciej.malecki@notimplemented.org>",
+  "name": "travis-ci-node.js-example",
+  "description": "An example node.js project that uses vows and travis-ci.org for continuous integration",
+  "version": "0.0.0",
+  "homepage": "http://travis-ci.org/#!/travis-ci/travis-ci-node.js-example",
+  "main": "./lib/serious-calculations",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/travis-ci/travis-ci-node.js-example.git"
+  },
+  "scripts": {
+    "test": "vows test/*.js",
+    "lint": "eslint --ext .js ./"
+  },
+  "engines": {
+    "node": ">= 0.4"
+  },
+  "dependencies": {
+    "eslint-plugin-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "vows": "latest"
+  }
+}
